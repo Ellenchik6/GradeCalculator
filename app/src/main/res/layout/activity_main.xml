@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hwID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="125dp"
+        android:text="Homework"
+        android:textColor="#212A5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mt1ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="Midterm 1"
+        android:textColor="#212A5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hwID" />
+
+    <TextView
+        android:id="@+id/mt2ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="Midterm 2"
+        android:textColor="#212A5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mt1ID" />
+
+    <TextView
+        android:id="@+id/participationID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="Participation"
+        android:textColor="#212A5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mt2ID" />
+
+    <TextView
+        android:id="@+id/groupPresentationID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="Group Presentation"
+        android:textColor="#212A5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/participationID" />
+
+    <TextView
+        android:id="@+id/finalProjectID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="Final Project"
+        android:textColor="#212A5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupPresentationID" />
+
+    <EditText
+        android:id="@+id/hwInputID"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="110dp"
+        android:backgroundTint="#B036407C"
+        android:drawableTint="#68212A5E"
+        android:ems="10"
+        android:foregroundTint="#1F2C73"
+        android:hint="grade 0-100"
+        android:inputType="number"
+        android:textColorHighlight="#68212A5E"
+        android:textColorHint="#6D212A5E"
+        android:textColorLink="#68212A5E"
+        android:textCursorDrawable="@drawable/text_cursor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toEndOf="@+id/hwID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mt1InputID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#B036407C"
+        android:ems="10"
+        android:hint="grade 0-100"
+        android:inputType="number"
+        android:textColorHighlight="#68212A5E"
+        android:textColorHint="#6D212A5E"
+        android:textColorLink="#68212A5E"
+        android:textCursorDrawable="@drawable/text_cursor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/mt1ID"
+        app:layout_constraintTop_toBottomOf="@+id/hwInputID" />
+
+    <EditText
+        android:id="@+id/mt2InputID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#B036407C"
+        android:ems="10"
+        android:hint="grade 0-100"
+        android:inputType="number"
+        android:textColorHighlight="#68212A5E"
+        android:textColorHint="#6D212A5E"
+        android:textColorLink="#68212A5E"
+        android:textCursorDrawable="@drawable/text_cursor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/mt2ID"
+        app:layout_constraintTop_toBottomOf="@+id/mt1InputID" />
+
+    <EditText
+        android:id="@+id/participationInputID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#B036407C"
+        android:ems="10"
+        android:hint="grade 0-100"
+        android:inputType="number"
+        android:textColorHighlight="#68212A5E"
+        android:textColorHint="#6D212A5E"
+        android:textColorLink="#68212A5E"
+        android:textCursorDrawable="@drawable/text_cursor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toEndOf="@+id/participationID"
+        app:layout_constraintTop_toBottomOf="@+id/mt2InputID" />
+
+    <EditText
+        android:id="@+id/groupPresentationInputID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#B036407C"
+        android:ems="10"
+        android:hint="grade 0-100"
+        android:inputType="number"
+        android:textColorHighlight="#68212A5E"
+        android:textColorHint="#6D212A5E"
+        android:textColorLink="#68212A5E"
+        android:textCursorDrawable="@drawable/text_cursor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/groupPresentationID"
+        app:layout_constraintTop_toBottomOf="@+id/participationInputID" />
+
+    <EditText
+        android:id="@+id/finalProjectInputID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#B036407C"
+        android:ems="10"
+        android:hint="grade 0-100"
+        android:inputType="number"
+        android:textColorHighlight="#68212A5E"
+        android:textColorHint="#6D212A5E"
+        android:textColorLink="#68212A5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@+id/finalProjectID"
+        app:layout_constraintTop_toBottomOf="@+id/groupPresentationInputID" />
+
+    <Button
+        android:id="@+id/addID"
+        android:layout_width="72dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#B036407C"
+        android:text="add"
+        app:layout_constraintBottom_toTopOf="@+id/mt1InputID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hwInputID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resetButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:backgroundTint="#B036407C"
+        android:text="reset homeworks"
+        app:layout_constraintBottom_toTopOf="@+id/addID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hwInputViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="120dp"
+        android:text="homework grades:"
+        android:textColor="#212A5E"
+        app:layout_constraintEnd_toStartOf="@+id/resetButtonID"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/finalGradeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Final Grade: "
+        android:textColor="#D536407C"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/calculateButtonID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/calculateButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#B036407C"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
